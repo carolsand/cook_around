@@ -12,6 +12,10 @@ body {
     background-color: aliceblue;
 }
 
+h3 {
+    background-color:#007bff;
+}
+
 img {
     display: block;
     width: 25%;
@@ -22,12 +26,12 @@ btn {
     padding: .5rem 1rem;
     font-size: 1.25rem;
     line-height: 1.5;
-    border-radius: .3rem;
+    border-radius: 5%;
     border-color: black;
 }
 
 .card {
-    background-color: rgb(0, 0, 0, 1.4)
+    background-color: rgb(0, 0, 0, 1.4);
 }
 
 p {
