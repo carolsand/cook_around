@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrap_modal_forms',
 ]
 
 MIDDLEWARE = [
@@ -120,6 +121,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/meals'
 
 LOGOUT_REDIRECT_URL = '/'

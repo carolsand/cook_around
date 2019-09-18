@@ -1,3 +1,21 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@franics925 
+2
+0 2 franics925/cook_around
+ Code  Issues 0  Pull requests 1  Projects 0  Wiki  Security  Insights  Settings
+cook_around/main_app/templates/base.html
+ Aly Nguyen fix merge conflicts
+e4878c9 6 minutes ago
+61 lines (58 sloc)  2.57 KB
+    
 {% load static %}
 
 <!DOCTYPE html>
@@ -24,6 +42,9 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ml-auto">
         {% if user.is_authenticated %}
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'cart' %}">Cart<span class="sr-only">(current)</span></a>
+        </li>
         <li class="nav-item active">
           <a class="nav-link" href="{% url 'index' %}">All Meals <span class="sr-only">(current)</span></a>
         </li>
@@ -56,3 +77,4 @@
   
 </body>
 </html>
+
