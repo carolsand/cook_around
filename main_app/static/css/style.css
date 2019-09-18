@@ -72,6 +72,32 @@ a {
     color: white;
 }
 
+#mealdetailepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../images/color-diet-food-255501.jpg);
+    background-size: cover;
+    height: 100%;
+    width: auto;
+    padding: 18em;
+    color: rgba(3, 22, 85, .9);
+}
+
+#profilepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../images/color-diet-food-255501.jpg);
+    background-size: cover;
+    height: 100%;
+    width: auto;
+    padding: 18em;
+    color: rgb(230, 15, 15);
+}
+
 form {
     padding: 2%;
 
@@ -80,6 +106,10 @@ form {
 form, table {
     padding: 1 4;
 
+}
+
+.table {
+    display: grid;
 }
 
 h1 {

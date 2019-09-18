@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-
+<div id="profilepage">
 <h1>Profile</h1>
 <hr />
 <div class="card">
@@ -15,5 +15,6 @@
 <p>City: {{ user.profile.city }}</p> 
 <p>State: {{ user.profile.state }}</p> 
 <p>Zipcode: {{ user.profile.zipcode }}</p> 
+</div>
 </div>
 {% endblock %}
