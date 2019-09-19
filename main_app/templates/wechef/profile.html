@@ -13,6 +13,8 @@
 <p>Chef box checked? {{ user.profile.chef }}</p> 
 <p>Chef's Address {{ user.profile.address1 }}</p> 
 <p>Chef's Address {{ user.profile.address2 }}</p> 
+<p>Chef's Address {{ user.location.geolocation }}</p> 
+{% comment %} <p>Chef's Address {{ user.profile.address1 }}</p>  {% endcomment %}
 <p>City: {{ user.profile.city }}</p> 
 <p>State: {{ user.profile.state }}</p> 
 <p>Zipcode: {{ user.profile.zipcode }}</p> 

@@ -42,6 +42,13 @@ class EntryDelete(LoginRequiredMixin, DeleteView):
   def get_success_url(self):
         return reverse_lazy('cart')
 
+class RentalAdmin(admin.ModelAdmin):
+  model = Location
+  formfield_overrides = {
+  map_fields.AddressField: {
+  'widget': map_widgets.GoogleMapsAddressWidget(attrs={'data-map-type': 'roadmap'})},
+}
+
 def home(request):
     return render(request, 'home.html')
 

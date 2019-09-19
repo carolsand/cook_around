@@ -5,6 +5,9 @@ from django.contrib.auth.models import User
 from django.db.models.signals import post_save, pre_delete
 from django.dispatch import receiver
 from django.core.validators import MaxValueValidator, MinValueValidator
+from django_google_maps import fields as map_fields
+from django_google_maps import widgets as map_widgets
+from django_google_maps import fields as map_fields
 
 
 class Profile(models.Model):
@@ -87,4 +90,12 @@ class Transaction(models.Model):
   cart = models.ForeignKey(Cart, on_delete=models.CASCADE)
   total = models.DecimalField(null=True, default=0.00, max_digits=7, decimal_places=2)
 
+class Location(model.Models):
+  user = models.ForeignKey(User, on_delete=models.CASCADE)
+  address1 = model.ForeignKey(Profile, on_delete=models.CASCADE)
+  address2 = model.ForeignKey(Profile, on_delete=models.CASCADE)
+  geolocation = map_fields.GeoLocationField(max_length=100)
+  formfield_overrides = {
+    map_fields.AddressField: {'widget': map_widgets.GoogleMapsAddressWidget},
+}
 # Create your models here.

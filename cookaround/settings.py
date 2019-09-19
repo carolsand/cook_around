@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrap_modal_forms',
+    'django_google_maps',
 ]
 
 MIDDLEWARE = [
@@ -50,6 +51,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+ACCESS_KEY = 'AKIA2JQDJ2DWZ7UTZQV4'
+PASS_KEY = 'QzjG4sPsI6UvnfEI14gfmDE1G/7rnHSg2MJQV5xj'
 
 ROOT_URLCONF = 'cookaround.urls'
 
