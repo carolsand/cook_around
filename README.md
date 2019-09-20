@@ -38,6 +38,6 @@ people who live nearby.
 
 **Screen Shots**
 
-[Welcome Page](../main_app/images/home.png)
+![Welcome Page](./main_app/images/home.png)
 
-[Menu Page](../main_app/images/menu.png)
+![Menu Page](./main_app/images/menu.png)
