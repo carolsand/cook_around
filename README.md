@@ -23,7 +23,9 @@ people who live nearby.
 [Heroku](https://www.heroku.com/home)
 
 **Getting Started**
+
 [heroku link](https://wechefn.herokuapp.com/)
+
 [Github link](https://github.com/alynguyen/cook_around)
 
 
