@@ -23,7 +23,8 @@ people who live nearby.
 [Heroku](https://www.heroku.com/home)
 
 **Getting Started**
-[heroku link](https://www.heroku.com/home)
+[heroku link](https://wechefn.herokuapp.com/)
+[Github link](https://github.com/alynguyen/cook_around)
 
 
 **Planned Enhancements (icebox items)**
@@ -36,3 +37,5 @@ people who live nearby.
 
 
 **Screen Shots**
+[Welcome Page](./images/home.png)
+[Menu Page](./images/menu.png)
